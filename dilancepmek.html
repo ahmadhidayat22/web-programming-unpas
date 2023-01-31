@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilan</title>
+</head>
+<body>
+<style>
+body{
+    text-align: center;
+
+}
+/* .container{
+    
+} */
+h1{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{font-size: 28px;}
+button{
+    font-size: 15px; 
+    margin-left: 10px;
+    border-radius: 5px;
+    
+}
+
+</style>
+<div class="container">
+    <h1>Kamu nanya ?</h1>
+    <img src="https://github.com/ahmadhidayat22/p.github.io/blob/main/dilancepmek.PNG?raw=true" height = 250 px width="250px" id ="kamunanya-id">
+    <p id="clicks" >kamu telah nanya : 0</p>
+    <button onclick="tambah()">Rambutnya Model apa ya ?</button>
+    <button onclick="kurang()" >maap bang</button>
+    <br>
+    <br>
+    <button onclick="rawr()">RAWWWRR !!!</button>
+</div>
+</body>
+    <script>
+// https://github.com/ahmadhidayat22/p.github.io/blob/main/kamunanya.mp3?raw=true
+const audio1 = new Audio("https://github.com/ahmadhidayat22/p.github.io/blob/main/kamunanya.mp3?raw=true")
+const audio2 = new Audio("https://github.com/ahmadhidayat22/p.github.io/blob/main/entekadang.mp3?raw=true")
+const audio3 = new Audio("https://github.com/ahmadhidayat22/p.github.io/blob/main/rawr.mp3?raw=true")
+        let clicks = 0
+        function tambah(){
+            document.getElementById("kamunanya-id").src = "https://github.com/ahmadhidayat22/p.github.io/blob/main/kamunanya1.PNG?raw=true"
+            audio1.play()
+            audio1.addEventListener("ended", function(){
+                document.getElementById('kamunanya-id').src = "https://github.com/ahmadhidayat22/p.github.io/blob/main/dilancepmek.PNG?raw=true"
+            })
+            clicks ++
+            document.getElementById("clicks").innerHTML = "kamu telah nanya : " + clicks
+        }
+        function kurang(){
+            
+            document.getElementById("kamunanya-id").src = "https://github.com/ahmadhidayat22/p.github.io/blob/main/entekadang1.PNG?raw=true"
+            audio2.play()
+            audio2.addEventListener("ended", function(){
+                document.getElementById('kamunanya-id').src = "https://github.com/ahmadhidayat22/p.github.io/blob/main/dilancepmek.PNG?raw=true"
+            })
+            clicks --
+            document.getElementById("clicks").innerHTML = "kamu telah nanya : " + clicks
+        }
+
+        function rawr(){
+            
+            document.getElementById('kamunanya-id').src = "https://github.com/ahmadhidayat22/p.github.io/blob/main/rawr.PNG?raw=true"
+            audio3.play()
+            audio3.addEventListener("ended" , function(){
+                document.getElementById('kamunanya-id').src = "https://github.com/ahmadhidayat22/p.github.io/blob/main/dilancepmek.PNG?raw=true"
+            })
+            clicks = 0
+            document.getElementById("clicks").innerHTML = "kamu telah nanya : " + clicks
+        }
+    </script>
+</html>

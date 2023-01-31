@@ -1,0 +1,79 @@
+*{
+    margin: 0; 
+    padding: 0;
+
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+        'Trebuchet MS', sans-serif;
+    background-color: #c6ff8e;
+}
+.wrapper{
+    margin:  60px auto;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.777); 
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+.header{
+    display: flex;
+    align-items: center;;
+}
+.header input{
+    margin: 10px 10px 10px ;
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+    'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border:1px solid #525252;
+    width: 200px;
+    
+    
+}
+
+.header button{
+    width: 55px;
+    height: 1.6rem;
+    font-size: 15px;
+    border-radius:6px;
+    border: 1px solid rgb(78, 179, 194);
+    background-color:rgb(92, 220, 240);
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: auto;
+    font-family: inherit;
+    
+}
+.header button:hover{
+    background-color: rgb(168, 241, 252);
+    border: 1px solid rgb(0, 0, 138);
+}
+.todo{
+    background-color: #fff;
+    margin: 0 10px 10px 10px;
+    padding-left: 20px;
+    border-radius: 3px;
+    height: 30px;
+    text-align: left;
+    align-items: center;
+    display:flex;
+    background-color: rgb(92, 220, 240);
+    font-family: inherit;
+}
+.todo img{
+    cursor: pointer;
+    margin-right: 5px;
+}
+.v{
+    margin-left: auto;
+    float: right;
+    margin-right: 5px;
+}
+/* 
+.todo p{
+    text-decoration:line-through;
+    color: rgb(130, 130, 130);
+
+} */
